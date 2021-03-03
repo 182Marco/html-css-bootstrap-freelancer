@@ -43,10 +43,42 @@ section.form {
   height: 60vh;
 }
 section.social {
-  height: 45vh;
+  height: 30vh;
 }
 footer {
   height: 10vh;
+}
+
+/* momentanea altezza a tutti i
+container e le row per rendere
+visibili gli spazi delle sezioni*/
+
+.container,
+.row {
+  height: 100%;
+}
+
+/* SEZIONE NAV */
+
+nav .col-xs-10 {
+  height: 100%;
+  border: 1px solid yellow;
+}
+nav .col-xs-4 {
+  height: 100%;
+  border: 1px solid red;
+}
+
+/* SEZIONE JUMBO */
+
+header .col-xs-10 {
+  height: 100%;
+  border: 1px solid white;
+}
+
+header .col-xs-6 {
+  height: 100%;
+  border: 1px solid brown;
 }
 
 /* sezione delle foto in cambo
@@ -58,6 +90,35 @@ bianco sotto jumbo */
   margin-top: 5%;
   background-color: coral;
   border-radius: 10px;
+}
+
+/* SEZIONE ABOUT VERDE ACQUA */
+
+.bg-waterblue .col-xs-8 {
+  height: 100%;
+  border: 1px solid brown;
+}
+/* SEZIONE FORM IN CAMPO BIANCO */
+
+.form .col-xs-8 {
+  height: 100%;
+  border: 1px solid brown;
+}
+/* SEZIONE PRE-FOOTER ICONE SOCIAL */
+
+.social .col-xs-10 {
+  height: 100%;
+  border: 1px solid yellow;
+}
+.social .col-xs-4 {
+  height: 95%;
+  border: 1px solid red;
+}
+/* SEZIONE FOOTER */
+
+footer .col-xs-2 {
+  height: 100%;
+  border: 1px solid lightgreen;
 }
 
 /* TESTI */
