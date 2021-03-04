@@ -83,22 +83,60 @@ textarea:focus {
 
 /* STILI INTERNI SEZIONE SOCIAL */
 
-ul.social li {
+.social.list {
   display: inline-block;
-  margin: 0 10px;
-  font-size: 2rem;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border: 2px solid #fff;
-  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+.social.list li {
+  list-style: none;
+  display: inline-block;
 }
 
-ul.social {
-  padding: 0;
+ul.social li .fab {
+  font-size: 2rem;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.fab.fa-facebook-f {
+  width: 54px;
 }
 
 .social-wrapper {
   text-align: center;
+}
+
+/* COMPONENT STELLINA */
+
+.star-component {
+  position: relative;
+  min-height: 7vh;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+.star-component .line {
+  width: 37.5%;
+  height: 5px;
+  background-color: #303c54;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.star-component .line.sx {
+  left: 0;
+}
+.star-component .line.dx {
+  right: 0;
+}
+.star-component .fa-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
 }
