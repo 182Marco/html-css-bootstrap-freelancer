@@ -1,0 +1,104 @@
+/* COSE PER FAR FUNZIONARE
+IL PLAYGROUND */
+
+body {
+  background-color: lightgrey;
+}
+
+.navbar-default {
+  background-color: lightgrey;
+}
+
+/* COSE CHE CI SONO GIA'
+FUORI DAL PLAYGROUND */
+
+.bg-brand {
+  background-color: #1abc9c;
+}
+.fff {
+  color: #fff;
+}
+
+/* STILI INTERNI ALLA NAV */
+/* azzeramento colore navbar */
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default {
+  border: none;
+}
+
+/* sitemazione testo del brand */
+.navbar-default .navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* sitemazione link navbar */
+.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* STILI INTERNI FORM */
+.btn.my-form-btn {
+  display: block;
+}
+
+.form-group > input {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #aaa;
+  height: 4.3vh;
+}
+
+input: {
+}
+
+.form-group > input:focus {
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #333;
+  /* left: 0;
+  margin-left: 0;
+  text-align: left; */
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  width: 100%;
+  height: 15vh;
+}
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #66afe9;
+}
+
+/* STILI INTERNI SEZIONE SOCIAL */
+
+ul.social li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+ul.social {
+  padding: 0;
+}
+
+.social-wrapper {
+  text-align: center;
+}

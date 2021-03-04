@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- bootstrap cdn mimificata-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- foglio di stile personale -->
+    <link rel="stylesheet" href="playground.css" />
+    <title>html scheletro</title>
+  </head>
+  <body>
+    <!-- INCOMINCIA LA NAV -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">start Bootstap</a>
+        </div>
+        <!-- LINK A DX NAV -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">profilo</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- INCOMINCIA IL FORM -->
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Name" />
+      </div>
+      <div class="form-group">
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          placeholder="Email Address"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="number"
+          class="form-control"
+          id="number"
+          placeholder="Phone Number"
+        />
+      </div>
+      <textarea name="" placeholder="Message"></textarea>
+      <button type="submit" class="btn btn-default my-form-btn bg-brand fff">
+        Submit
+      </button>
+    </form>
+    <!-- PREFOTTER ICONE -->
+    <div class="social-wrapper">
+      <h3 class="fff">AROUND THE WEB</h3>
+      <ul class="social list">
+        <li><i class="fab fa-facebook-f fff"></i></li>
+        <li><i class="fab fa-google-plus-g fff"></i></li>
+        <li><i class="fab fa-twitter fff"></i></li>
+        <li><i class="fab fa-linkedin-in fff"></i></li>
+      </ul>
+    </div>
+    <!-- SCRITTA DEL COPYRIGHT -->
+    <p class="fff">Copyright &copy; Your Website 2019</p>
+  </body>
+</html>
