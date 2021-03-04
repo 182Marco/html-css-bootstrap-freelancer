@@ -48,19 +48,12 @@
     </header>
     <!-- tittolo portfolio sotto jumbo (BG-BRAND)  -->
     <main class="text-center">
-      <h2>PORTFOLIO</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-xs-offset-3">
-            <div class="row position-relative">
-              <div class="col-xs-5 line bg-secondary"></div>
-              <div class="col-xs-2">
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="col-xs-5 line bg-secondary"></div>
-            </div>
-          </div>
-        </div>
+      <h2 class="text-center">PORTFOLIO</h2>
+      <!-- COMPONENT STELLINA -->
+      <div class="star-component">
+        <div class="line sx"></div>
+        <i class="fas fa-star"></i>
+        <div class="line dx"></div>
       </div>
       <!-- zona delle foto colorare -->
 
@@ -92,41 +85,151 @@
       </div>
     </main>
 
-      <!-- ZONA ABOUT VERDE ACQUA (BG-BRAND)  -->
-      <section class="bg-brand">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-8 col-xs-offset-2"></div>
+    <!-- ZONA ABOUT VERDE ACQUA (BG-BRAND)  -->
+    <section class="bg-brand">
+      <div class="container">
+        <!-- tittolo about sotto foto (BG-BRAND)  -->
+        <h2 class="text-center fff">about</h2>
+        <!-- COMPONENT STELLINA -->
+        <div class="star-component">
+          <div class="line white-elem sx"></div>
+          <i class="fas white-elem fa-star"></i>
+          <div class="line white-elem dx"></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <!-- paragrafo testuale -->
+            <p class="fff text-divide-in-col">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+              quos dolor ut. Eum aperiam recusandae quia facilis, soluta quidem
+              adipisci. Voluptatibus optio laudantium eveniet, dolores similique
+              in. Beatae, perspiciatis voluptates. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Reprehenderit, placeat laborum quod
+              nobis accusamus repellendus aliquam blanditiis ratione quibusdam
+              numquam?
+            </p>
+            <a href="#" class="text-center fff">
+              <i class="fas fa-download"></i>Download</a
+            >
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <!-- SEZIONE FORM IN CAMPO BIANCO -->
     <section class="form">
-        <div class="container">
-            <div class="row">
-              <div class="col-xs-8 col-xs-offset-2"></div>
-            </div>
-    </section>
-    <!-- SEZIONE PRE-FOTTER ICONE SOCIAL  -->
-    <section class="social bg-semi-darkblue">
+      <div class="container">
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
-                <div class="row">
-                    <div class="col-xs-4"></div>
-                    <div class="col-xs-4"></div>
-                    <div class="col-xs-4"></div>
-                </div>
+          <div class="col-xs-8 col-xs-offset-2 position-relative">
+            <h2 class="text-center">CONTACT ME</h2>
+            <!-- COMPONENT STELLINA -->
+            <div class="star-component">
+              <div class="line sx"></div>
+              <i class="fas fa-star"></i>
+              <div class="line dx"></div>
+            </div>
+            <!-- INCOMINCIA IL FORM -->
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <textarea placeholder="Message"></textarea>
+              <button
+                type="submit"
+                class="btn btn-default my-form-btn bg-brand btn-lg fff"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEZIONE SCRITTE PRIMA COPYRIGHT (PRE-FOOTER) -->
+    <section class="social bg-semi-darkblue">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="row">
+            <div class="col-xs-4 h-100">
+              <!-- scritte sx -->
+              <div class="wrapper w-100">
+                <h3 class="fff">location</h3>
+                <p class="fff">
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-4 h-100">
+              <!-- prefooter icone social -->
+              <div class="social wrapper w-100">
+                <h3 class="fff">around the web</h3>
+                <ul class="social list">
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f fff"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-google-plus-g fff"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter fff"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in fff"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-4 h-100">
+              <!-- scritte a dx -->
+              <div class="wrapper w-100">
+                <h3 class="fff">about free lancer</h3>
+                <p class="fff">
+                  Lorem ipsum dolor sit Lorem, ipsum. amet consectetur
+                  adipisicing Lorem, ipsum.
+                  <a class="brand" href="#">Start Bootstap</a>
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
     <!-- FOOTER  -->
-    <footer class="bg-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-5"></div>
-            </div>
+    <footer class="bg-secondary position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-4 text-center h-100">
+            <!-- scritta copyright -->
+            <p class="fff center-in-abs w-100">
+              Copyright &copy; Your Website 2019
+            </p>
+          </div>
         </div>
+      </div>
     </footer>
   </body>
 </html>

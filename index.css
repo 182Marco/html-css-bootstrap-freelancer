@@ -4,6 +4,31 @@
 .fff {
   color: #fff;
 }
+.brand {
+  color: #1abc9c;
+}
+.brand:hover {
+  color: #1abc9c;
+}
+
+/* full width and height */
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/* posizioni */
+
+.center-in-abs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* colori in background */
 
@@ -18,11 +43,36 @@
   background-color: #1abc9c;
 }
 
-/* linee disegnate con css */
+/* COMPONENT STELLINA */
 
-.line {
-  height: 3px;
+.star-component {
+  position: relative;
+  min-height: 7vh;
+  width: 30vw;
+  margin: 0 auto;
+}
+
+.star-component .line {
+  width: 37.5%;
+  height: 5px;
+  background-color: #303c54;
   border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.star-component .line.sx {
+  left: 0;
+}
+.star-component .line.dx {
+  right: 0;
+}
+.star-component .fa-star {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
 }
 
 /* MACRO-SEZIONI */
@@ -36,17 +86,15 @@ header {
 }
 
 section.bg-brand {
-  height: 70vh;
+  height: 50vh;
   margin-top: 10%;
 }
-section.form {
-  height: 60vh;
-}
+
 section.social {
-  height: 30vh;
+  height: 25vh;
 }
 footer {
-  height: 10vh;
+  height: 8vh;
 }
 
 /* momentanea altezza a tutti i
@@ -94,31 +142,143 @@ bianco sotto jumbo */
 
 /* SEZIONE ABOUT VERDE ACQUA */
 
-section.bg-brand .col-xs-8 {
-  height: 100%;
-  border: 1px solid brown;
+.bg-brand .white-elem.line {
+  background-color: #fff;
 }
+.bg-brand .white-elem {
+  color: #fff;
+}
+
+.text-divide-in-col {
+  columns: 200px;
+  margin: 5vh 0;
+}
+
+.bg-brand a {
+  display: block;
+  padding: 7px 5px;
+  border: 1px solid #fff;
+  width: 10vw;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.bg-brand a i {
+  margin-right: 5px;
+}
+
 /* SEZIONE FORM IN CAMPO BIANCO */
 
 .form .col-xs-8 {
   height: 100%;
-  border: 1px solid brown;
 }
-/* SEZIONE PRE-FOOTER ICONE SOCIAL */
+
+.form form {
+  margin: 4vh 0 6vh 0;
+  height: 60%;
+  width: 100%;
+}
+
+/* STILI INTERNI FORM */
+
+.form-group > input {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #aaa;
+  height: 4.3vh;
+}
+
+.form-group > input:focus {
+  box-shadow: none;
+}
+
+::placeholder {
+  color: #333;
+  /* left: 0;
+  margin-left: 0;
+  text-align: left; */
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: 1vh;
+}
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #66afe9;
+}
+
+.btn.my-form-btn {
+  display: block;
+}
+
+/* SEZIONE PRE-FOOTER DOPO FORM */
 
 .social .col-xs-10 {
   height: 100%;
-  border: 1px solid yellow;
 }
-.social .col-xs-4 {
-  height: 95%;
-  border: 1px solid red;
-}
-/* SEZIONE FOOTER */
+/* tutti i contenitori sezione
+blu scuro dopo forum */
 
-footer .col-xs-2 {
-  height: 100%;
-  border: 1px solid lightgreen;
+.wrapper {
+  text-align: center;
+  padding-top: 17%;
+}
+.wrapper p {
+  padding: 0 2vw;
+}
+
+/* STILI INTERNI SEZIONE SOCIAL */
+
+.social.list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.social.list li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul.social li .fab {
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: transform 0.2s, color 0.4s;
+}
+
+ul.social li .fab:hover {
+  transform: scale(1.1);
+  color: rgb(255, 166, 0);
+  border-color: rgb(255, 166, 0);
+}
+
+.fab.fa-facebook-f {
+  width: 41px;
 }
 
 /* TESTI */
+
+h2 {
+  margin-top: 6vh;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.5rem;
+}
