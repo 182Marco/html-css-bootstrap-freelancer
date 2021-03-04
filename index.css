@@ -77,16 +77,12 @@
 
 /* MACRO-SEZIONI */
 
-nav {
-  height: 12.5vh;
-}
-
 header {
   height: 42.5vh;
 }
 
 section.bg-brand {
-  height: 50vh;
+  height: 46vh;
   margin-top: 10%;
 }
 
@@ -106,15 +102,32 @@ visibili gli spazi delle sezioni*/
   height: 100%;
 }
 
-/* SEZIONE NAV */
+/* STILI INTERNI ALLA NAV */
 
-nav .col-xs-10 {
-  height: 100%;
-  border: 1px solid yellow;
+/* azzeramento colore navbar */
+.navbar-default {
+  background-color: transparent;
+  padding-top: 2vh;
 }
-nav .col-xs-4 {
-  height: 100%;
-  border: 1px solid red;
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default {
+  border: none;
+}
+
+/* sitemazione testo del brand */
+.navbar-default .navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* sitemazione link navbar */
+.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* SEZIONE JUMBO */
@@ -151,7 +164,7 @@ bianco sotto jumbo */
 
 .text-divide-in-col {
   columns: 200px;
-  margin: 5vh 0;
+  margin: 1vh 0 5vh;
 }
 
 .bg-brand a {
