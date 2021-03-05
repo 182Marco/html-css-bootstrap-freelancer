@@ -30,6 +30,7 @@
               <div class="container-fluid">
                 <!-- hamburger solo mobile -->
                 <button
+                  id="hamburger"
                   type="button"
                   class="navbar-toggle collapsed"
                   data-toggle="collapse"
@@ -46,6 +47,18 @@
                 <div class="navbar-header">
                   <a class="navbar-brand" href="#home">start Bootstap</a>
                 </div>
+                <!-- LINK VISIBILI SOLO MOBILE 
+                DOPO PRESSIONE SU HAMBURGER -->
+                <ul class="nav navbar-nav navbar-left" id="mobileLinkList">
+                  <li><a href="#home" class="mobLink">profilo</a></li>
+                  <li><a href="#about" class="mobLink">about</a></li>
+                  <li><a href="#contact" class="mobLink">contact</a></li>
+                  <li>
+                    <a href="#" class="mobLink">
+                      <i class="far fa-window-close"> </i> exit
+                    </a>
+                  </li>
+                </ul>
                 <!-- LINK A DX NAV -->
                 <div
                   class="collapse navbar-collapse"
@@ -171,7 +184,7 @@
               nobis accusamus repellendus aliquam blanditiis ratione quibusdam
               numquam?
             </p>
-            <a href="#" class="text-center">
+            <a href="#" class="text-center" id="porco-dio">
               <i class="fas fa-download"></i>Download</a
             >
           </div>
@@ -292,5 +305,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

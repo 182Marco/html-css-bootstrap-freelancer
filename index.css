@@ -125,18 +125,18 @@ html {
   width: 100vw;
 }
 header {
-  padding-top: 6%;
+  padding-top: 80px;
 }
 main {
   padding: 4% 0 6% 0;
 }
 
 #about {
-  padding-top: 7%;
+  padding: 100px 0 70px;
 }
 
 section.form {
-  padding: 8% 0;
+  padding: 110px 0 70px;
 }
 
 .form form {
@@ -199,6 +199,10 @@ footer {
 /* sistemazione e sitemazione hover
 dell'hamburger */
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
 .navbar-default .navbar-toggle {
   transition: all 0.4s;
 }
@@ -214,7 +218,8 @@ dell'hamburger */
   border-color: rgb(255, 166, 0);
 }
 
-.navbar-default .navbar-toggle:hover .icon-bar {
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
   background-color: rgb(255, 166, 0);
 }
 
@@ -269,20 +274,6 @@ bianco sotto jumbo */
   margin: 1vh 0 5vh;
 }
 
-.bg-brand a {
-  display: block;
-  padding: 7px 5px;
-  color: #fff;
-  border: 1px solid #fff;
-  width: 120px;
-  border-radius: 5px;
-  margin: 0 auto;
-}
-
-.bg-brand a i {
-  margin-right: 5px;
-}
-
 /* STILI INTERNI FORM */
 
 .form-group > input {
@@ -307,6 +298,28 @@ bianco sotto jumbo */
 }
 textarea::placeholder {
   color: #333;
+}
+/* bottone form e stati di hover */
+
+.bg-brand a {
+  display: block;
+  padding: 7px 5px;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 120px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.bg-brand .container a.text-center:hover {
+  color: #1abc9c;
+  background-color: #fff;
+  font-weight: 700;
+  /* font-style: none; */
+}
+
+.bg-brand a i {
+  margin-right: 5px;
 }
 
 /* stilizzazione textarea */
