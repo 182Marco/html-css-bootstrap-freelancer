@@ -55,9 +55,6 @@ FUORI DAL PLAYGROUND */
   height: 4.3vh;
 }
 
-input: {
-}
-
 .form-group > input:focus {
   box-shadow: none;
 }

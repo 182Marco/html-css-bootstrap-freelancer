@@ -156,6 +156,17 @@ footer {
   color: rgb(255, 166, 0);
 }
 
+/* sitemazione colori dei link */
+
+.navbar-default .navbar-nav > li > a {
+  transition: color 0.3s;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: rgb(255, 166, 0);
+}
+
 /* sistemazione e sitemazione hover
 dell'hamburger */
 
