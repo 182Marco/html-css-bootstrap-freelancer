@@ -14,9 +14,9 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  margin-top: 6vh;
-  margin-bottom: 0;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -36,8 +36,6 @@ h4 {
 p {
   font-size: 1.5rem;
 }
-
-nav
 
 /* colori dei testi*/
 .fff {
@@ -114,11 +112,38 @@ nav
   font-size: 3rem;
 }
 
+/* SCROLL MORBIDO PREMENDO I LINK */
+html {
+  scroll-behavior: smooth;
+}
+
 /* MACRO-SEZIONI */
 
+.nav-space {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+}
+header {
+  padding-top: 6%;
+}
+main {
+  padding: 4% 0 6% 0;
+}
+
+section.form {
+  padding: 4%;
+}
+
+.form form {
+  margin-top: 3%;
+  height: 60%;
+  width: 100%;
+}
+
 section.bg-brand {
-  margin-top: 10%;
-  padding-bottom: 8%;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
 
 .social.bg-semi-darkblue {
@@ -236,7 +261,7 @@ bianco sotto jumbo */
 }
 
 .text-divide-in-col {
-  columns: 200px;
+  columns: 2 200px;
   margin: 1vh 0 5vh;
 }
 
@@ -252,18 +277,6 @@ bianco sotto jumbo */
 
 .bg-brand a i {
   margin-right: 5px;
-}
-
-/* SEZIONE FORM IN CAMPO BIANCO */
-
-.form .col-xs-8 {
-  height: 100%;
-}
-
-.form form {
-  margin: 4vh 0 6vh 0;
-  height: 60%;
-  width: 100%;
 }
 
 /* STILI INTERNI FORM */
