@@ -131,8 +131,12 @@ main {
   padding: 4% 0 6% 0;
 }
 
+#about {
+  padding-top: 7%;
+}
+
 section.form {
-  padding: 4%;
+  padding: 8% 0;
 }
 
 .form form {
