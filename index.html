@@ -28,6 +28,20 @@
             <!-- INCOMINCIA LA NAV -->
             <nav class="navbar navbar-default">
               <div class="container-fluid">
+                <!-- hamburger solo mobile -->
+                <button
+                  type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- **************** -->
                 <div class="navbar-header">
                   <a class="navbar-brand" href="#">start Bootstap</a>
                 </div>
@@ -54,6 +68,7 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-xs-10 col-xs-offset-1">
+            <img src="./img/avatar.svg" alt="mio avatar" />
             <h1 class="fff">start bootstrap</h1>
             <!-- component stellina -->
             <div class="star-component">
@@ -85,22 +100,46 @@
           <div class="col-xs-10 col-xs-offset-1">
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="photo-cont"></div>
+                <div class="photo-cont">
+                  <img class="w-100" src="./img/cabin.png" alt="casetta" />
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="photo-cont"></div>
+                <div class="photo-cont">
+                  <img class="w-100" src="./img/cake.png" alt="torta" />
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="photo-cont"></div>
+                <div class="photo-cont">
+                  <img
+                    class="w-100"
+                    src="./img/circus.png"
+                    alt="tendone circo"
+                  />
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="photo-cont"></div>
+                <div class="photo-cont">
+                  <img
+                    class="w-100"
+                    src="./img/game.png"
+                    alt="joistick viideogiochi"
+                  />
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="photo-cont"></div>
+                <div class="photo-cont">
+                  <img class="w-100" src="./img/safe.png" alt="cassaforte" />
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="photo-cont"></div>
+                <div class="photo-cont">
+                  <img
+                    class="w-100"
+                    src="./img/submarine.png"
+                    alt="sottomarino"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -112,7 +151,7 @@
     <section class="bg-brand">
       <div class="container">
         <!-- tittolo about sotto foto (BG-BRAND)  -->
-        <h2 class="text-center fff">about</h2>
+        <h2 class="text-center">about</h2>
         <!-- component stellina -->
         <div class="star-component">
           <div class="line white-elem sx"></div>
@@ -122,7 +161,7 @@
         <div class="row">
           <div class="col-xs-8 col-xs-offset-2">
             <!-- paragrafo testuale -->
-            <p class="fff text-divide-in-col">
+            <p class="text-divide-in-col">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
               quos dolor ut. Eum aperiam recusandae quia facilis, soluta quidem
               adipisci. Voluptatibus optio laudantium eveniet, dolores similique
@@ -131,7 +170,7 @@
               nobis accusamus repellendus aliquam blanditiis ratione quibusdam
               numquam?
             </p>
-            <a href="#" class="text-center fff">
+            <a href="#" class="text-center">
               <i class="fas fa-download"></i>Download</a
             >
           </div>
@@ -187,50 +226,48 @@
     <!-- SEZIONE SCRITTE PRIMA COPYRIGHT (PRE-FOOTER) -->
     <section class="social bg-semi-darkblue">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
           <div class="row">
-            <div class="col-xs-4 h-100">
+            <div class="col-xs-12 col-sm-4 h-100">
               <!-- scritte sx -->
               <div class="wrapper w-100">
-                <h3 class="fff">location</h3>
-                <p class="fff">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </p>
+                <h3>location</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
               </div>
             </div>
-            <div class="col-xs-4 h-100">
+            <div class="col-xs-12 col-sm-4 h-100">
               <!-- prefooter icone social -->
               <div class="social wrapper w-100">
-                <h3 class="fff">around the web</h3>
+                <h3>around the web</h3>
                 <ul class="social list">
                   <li>
                     <a href="#">
-                      <i class="fab fa-facebook-f fff"></i>
+                      <i class="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fab fa-google-plus-g fff"></i>
+                      <i class="fab fa-google-plus-g"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fab fa-twitter fff"></i>
+                      <i class="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="fab fa-linkedin-in fff"></i>
+                      <i class="fab fa-linkedin-in"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-xs-4 h-100">
+            <div class="col-xs-12 col-sm-4 h-100">
               <!-- scritte a dx -->
               <div class="wrapper w-100">
-                <h3 class="fff">about free lancer</h3>
-                <p class="fff">
+                <h3>about free lancer</h3>
+                <p>
                   Lorem ipsum dolor sit Lorem, ipsum. amet consectetur
                   adipisicing Lorem, ipsum.
                   <a class="brand" href="#">Start Bootstap</a>
@@ -247,7 +284,7 @@
         <div class="row">
           <div class="col-xs-4 col-xs-offset-4 text-center h-100">
             <!-- scritta copyright -->
-            <p class="fff center-in-abs w-100">
+            <p class="center-in-abs w-100">
               Copyright &copy; Your Website 2019
             </p>
           </div>

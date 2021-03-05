@@ -1,12 +1,19 @@
 /* UTILITIES */
 
+.container,
+.row {
+  height: 100%;
+}
+
 /* TESTI */
 
 h1 {
+  font-size: 4.2rem;
   text-transform: uppercase;
 }
 
 h2 {
+  font-size: 3.5rem;
   margin-top: 6vh;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -29,6 +36,8 @@ h4 {
 p {
   font-size: 1.5rem;
 }
+
+nav
 
 /* colori dei testi*/
 .fff {
@@ -78,7 +87,7 @@ p {
 .star-component {
   position: relative;
   min-height: 7vh;
-  width: 30vw;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -107,29 +116,17 @@ p {
 
 /* MACRO-SEZIONI */
 
-header {
-  height: 42.5vh;
-}
-
 section.bg-brand {
-  height: 46vh;
   margin-top: 10%;
+  padding-bottom: 8%;
 }
 
-section.social {
-  height: 25vh;
+.social.bg-semi-darkblue {
+  padding: 2% 0;
 }
+
 footer {
   height: 8vh;
-}
-
-/* momentanea altezza a tutti i
-container e le row per rendere
-visibili gli spazi delle sezioni*/
-
-.container,
-.row {
-  height: 100%;
 }
 
 /* STILI INTERNI ALLA NAV */
@@ -153,7 +150,34 @@ visibili gli spazi delle sezioni*/
 .navbar-default .navbar-brand {
   text-transform: uppercase;
   font-weight: 700;
+  transition: color 0.4s;
 }
+.navbar-default .navbar-brand:hover {
+  color: rgb(255, 166, 0);
+}
+
+/* sistemazione e sitemazione hover
+dell'hamburger */
+
+.navbar-default .navbar-toggle {
+  transition: all 0.4s;
+}
+
+.navbar-toggle:hover .icon-bar {
+  transition: all 0.4s;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+  color: rgb(255, 166, 0);
+  border-color: rgb(255, 166, 0);
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: rgb(255, 166, 0);
+}
+
 /* sitemazione link navbar */
 .navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
@@ -162,29 +186,37 @@ visibili gli spazi delle sezioni*/
 
 /* SEZIONE JUMBO */
 
-header .col-xs-10 {
-  height: 100%;
-  border: 1px solid white;
-}
-
 header .col-xs-8 {
   height: 100%;
   border: 1px solid brown;
+}
+
+header img {
+  width: 15vw;
+  min-width: 170px;
+  margin-top: 4vh;
+  border-radius: 10px;
+}
+
+header h4 {
+  margin-bottom: 7vh;
 }
 
 /* sezione delle foto in cambo
 bianco sotto jumbo */
 
 .photo-cont {
-  height: 37vh;
-  max-height: 220px;
-  margin-top: 5%;
-  background-color: coral;
+  margin-top: 10%;
+}
+.photo-cont img {
   border-radius: 10px;
 }
 
 /* SEZIONE ABOUT VERDE ACQUA */
 
+.bg-brand .container {
+  color: #fff;
+}
 .bg-brand .white-elem.line {
   background-color: #fff;
 }
@@ -200,8 +232,9 @@ bianco sotto jumbo */
 .bg-brand a {
   display: block;
   padding: 7px 5px;
+  color: #fff;
   border: 1px solid #fff;
-  width: 10vw;
+  width: 120px;
   border-radius: 5px;
   margin: 0 auto;
 }
@@ -236,12 +269,19 @@ bianco sotto jumbo */
   box-shadow: none;
 }
 
-::placeholder {
-  color: #333;
-  /* left: 0;
-  margin-left: 0;
-  text-align: left; */
+/* colori e allineamento placeholder */
+.form-group > input {
+  padding: 0;
 }
+
+.form-group > input::placeholder {
+  color: #333;
+}
+textarea::placeholder {
+  color: #333;
+}
+
+/* stilizzazione textarea */
 
 textarea {
   border: none;
@@ -256,13 +296,24 @@ textarea:focus {
   border-bottom: 1px solid #66afe9;
 }
 
+/* stilizzazione btn
+e btn hover del form */
+
 .btn.my-form-btn {
   display: block;
+  color: #fff;
+  transition: all 0.3s;
+}
+.btn.my-form-btn:hover {
+  display: block;
+  color: #1abc9c;
+  background-color: transparent;
+  border: 1px solid #1abc9c;
 }
 
 /* SEZIONE PRE-FOOTER DOPO FORM */
 
-.social .col-xs-10 {
+.social .col-sm-10 {
   height: 100%;
 }
 /* tutti i contenitori sezione
@@ -270,13 +321,20 @@ blu scuro dopo forum */
 
 .wrapper {
   text-align: center;
-  padding-top: 17%;
+  padding-top: 8%;
 }
 .wrapper p {
   padding: 0 2vw;
 }
 
 /* STILI INTERNI SEZIONE SOCIAL */
+
+.social h3,
+.social i,
+.social p,
+footer p {
+  color: #fff;
+}
 
 .social.list {
   display: inline-block;
@@ -293,7 +351,7 @@ ul.social li .fab {
   padding: 10px;
   border: 1px solid #fff;
   border-radius: 50%;
-  margin: 0 10px;
+  margin: 0 0.4vw;
   transition: transform 0.2s, color 0.4s;
 }
 
