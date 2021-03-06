@@ -247,14 +247,54 @@ header h4 {
   margin-bottom: 7vh;
 }
 
-/* sezione delle foto in cambo
-bianco sotto jumbo */
+/* SEZIONE IMG IN CAMPO BIANCO*/
 
-.photo-cont {
-  margin-top: 10%;
-}
-.photo-cont img {
+main .img-wrap {
+  position: relative;
+  margin-top: 12%;
   border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(45, 100, 0, 0.5);
+}
+
+/* costruzione dei layer
+all'hover e del + */
+
+main .layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 28.4%;
+  color: transparent;
+  transition: border-color 0.4s;
+}
+
+main .layer:hover {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 200px solid rgba(45, 100, 0, 0.5);
+  /* grazie allo z-indez se 
+  si va su elemento plus comunque viene
+  percepito un hover sul layer */
+  z-index: 1;
+}
+
+main .plus {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7rem;
+  color: transparent;
+  transition: top 0.3s;
+}
+
+main .layer:hover + .plus {
+  color: #fff;
+  top: 50%;
 }
 
 /* SEZIONE ABOUT VERDE ACQUA */
