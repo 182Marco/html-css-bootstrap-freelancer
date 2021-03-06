@@ -282,7 +282,11 @@ main .layer:hover {
   z-index: 1;
 }
 
-main .plus {
+/* + CON PSEUDOELEMENTO */
+
+.img-wrap::after {
+  content: '+';
+  display: inline-block;
   position: absolute;
   top: 58%;
   left: 50%;
@@ -291,8 +295,7 @@ main .plus {
   color: transparent;
   transition: top 0.3s;
 }
-
-main .layer:hover + .plus {
+.img-wrap:hover::after {
   color: #fff;
   top: 50%;
 }
